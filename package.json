@@ -2,11 +2,11 @@
   "name": "nodeserverless",
   "version": "1.0.0",
   "description": "Node Demo API App",
-  "main": "./src/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./src/index.js",
-    "build": "babel src -d dist"
+    "start": "node index.js",
+    "build": "babel index.js -d dist"
   },
   "author": "ShubShinde",
   "license": "ISC",
