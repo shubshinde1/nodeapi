@@ -1,5 +1,6 @@
 import env from "dotenv";
 import express from "express";
+import leaveData from "./leaveData.json" assert { type: "json" };
 
 env.config();
 
@@ -7,7 +8,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   console.log("new req");
-  res.send("hello world");
+  res.send(leaveData);
 });
 
 app.listen(process.env.PORT, () => {
