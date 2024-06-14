@@ -6,7 +6,7 @@ env.config();
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/api/v1", (req, res) => {
   console.log("new req");
   res.send(leaveData);
 });
